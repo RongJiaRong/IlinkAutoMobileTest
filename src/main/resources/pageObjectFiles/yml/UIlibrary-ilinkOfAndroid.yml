@@ -1,0 +1,569 @@
+pages:
+  - page:
+      pageName: com.ilink.android.pageObject.PermisionAskPage
+      value:
+      desc: 过渡页授权页面元素
+      locators:
+        - { type: "id",timeout: "5",value: "com.android.packageinstaller:id/dialog_container",desc: "权限申请",name: "phone_permission" }
+        - { type: "id",timeout: "5",value: "com.android.packageinstaller:id/permission_allow_button",desc: "允许",name: "allow_button" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.LoginPage
+      value:
+      desc: 登录页面元素
+      locators:
+        - { type: "xpath",timeout: "5",value: "//*[@text='密码登录']",desc: "密码登录",name: "pwd_login" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='验证码登录']",desc: "验证码登录",name: "validate_code_login" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/met_login_phone",desc: "手机号输入",name: "phone_num_input" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_sendvalidatecode",desc: "发送验证码",name: "send_validate_code" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/met_login_validatecode",desc: "验证码输入",name: "validate_code_input" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/met_login_account",desc: "手机账号输入",name: "login_account_input" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/met_login_password",desc: "密码输入",name: "login_pwd_input" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_login_login",desc: "登陆按钮",name: "login_button" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_forgetpassword",desc: "忘记密码按钮",name: "pwd_forgot_button" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.HomePage
+      value:
+      desc: 消息首页页面元素
+      locators:
+#        - 1. 侧边栏设置
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_user_info",desc: "侧栏头像信息",name: "userinfo" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/state_ll",desc: "工作状态",name: "work_state" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_tab1",desc: "我的名片",name: "business_card_tab" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_redpacket",desc: "红包",name: "red_pocket_tab" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_tab_huhangbang",desc: "ilink护航榜",name: "escort_list_tab" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_tab5",desc: "账号与设置",name: "settings_tab" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_tab_helpcenter",desc: "帮助中心",name: "help_center_tab" }
+
+#        - 2. 消息首页顶栏按钮
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_start_meeting",desc: "进入音视频首页",name: "start_meeting" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_setting",desc: "首页加号",name: "add_tab" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='创建群聊']",desc: "创建群聊",name: "create_groups_chat" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='扫一扫']",desc: "扫一扫",name: "scanning" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/edt",desc: "搜索",name: "searching" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_todocenter",desc: "待办中心（点击跳转）",name: "to_do_center" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_schedule",desc: "日程首页（点击跳转）",name: "schedule" }
+
+#        - 3. 消息tab， 日程tab，工作台tab，通讯录tab
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/bottom_iv_2",desc: "消息tab",name: "message_page" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/bottom_iv_1",desc: "日程tab",name: "schedule_page" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/bottom_iv_3",desc: "工作台tab",name: "workspace_page" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/bottom_iv_4",desc: "通讯录tab",name: "address_book_page" }
+
+#        - 4. 消息列表
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/msg_rv",desc: "信息列表",name: "message_list" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.SchedulePage
+      value:
+      desc: 日程页面元素
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_titlebar_right",desc: "日程页搜索",name: "schedule_search" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_add_schedule",desc: "新建日程",name: "new_schedule" }
+
+        # 日程列表
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/listview",desc: "日程列表",name: "schedule_list" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.ScheduleCreatePage
+      value:
+      desc: 创建日程页面元素
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_right",desc: "完成",name: "schedule_confirm" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "创建日程",name: "schedule_create_tittle" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/et_schedule_title",desc: "输入日程标题",name: "schedule_title_input" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/swb_lock",desc: "全天开关切换",name: "schedule_switch_lock" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_time_start",desc: "选择时间",name: "schedule_time_select" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_add_user",desc: "添加参与人（点击跳转）",name: "schedule_add_users" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/et_schedule_address",desc: "添加地点",name: "schedule_add_address" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_schedule_remind",desc: "时间提醒选择（点击跳转）",name: "schedule_remind" }
+
+#        时间选择器
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/btnCancel",desc: "取消",name: "schedule_time_select_cancel" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/btnSubmit",desc: "确定",name: "schedule_time_select_confirm" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.ReviewSelectParticipantPage
+      value:
+      desc: 查看选择参与人页面元素
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "选择参与人",name: "review_participant_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_right",desc: "完成",name: "review_participant_confirm" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_selector",desc: "选择新的参与人（点击跳转）",name: "review_participant_add" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/item_all_checked",desc: "全选",name: "review_participant_all_select" }
+#        已选择参与人员列表
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/contact_recyclerview_persion",desc: "已选择的参与人",name: "review_participant_selected" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.SelectParticipantPage
+      value:
+      desc: 选择参与人页面元素
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "选择联系人",name: "select_participant_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/edt",desc: "搜索框",name: "select_participant_search" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_friend",desc: "按好友选（点击跳转）",name: "select_participant_by_friends" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_org_select",desc: "按架构选（点击跳转）",name: "select_participant_by_framework" }
+ #        常用联系人员列表
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/contact_recyclerview",desc: "常用联系人列表",name: "select_participant_list" }
+#         搜索结果列表
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rv_query_contact",desc: "搜索结果列表",name: "search_participant_list" }
+
+        - { type: "xpath",timeout: "5",value: "//*[@text='测试账号17']",desc: "测试账号17",name: "select_participant_result" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_selected",desc: "查看已选择人列表（点击跳转）",name: "review_select_participant_list" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_sumbit",desc: "确定",name: "select_participant_submit" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.SelectParticipantByFriendsPage
+      value:
+      desc: 按好友选择参与人页面元素
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "选择联系人页面标题",name: "select_participant_by_friends_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/edt",desc: "搜索框",name: "select_participant_by_friends_search" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='通讯录']",desc: "点击通讯录",name: "select_participant_by_friends_click_address" }
+#        好友列表
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rv_myfriends",desc: "好友列表",name: "select_participant_by_friends_list" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_selected",desc: "查看已选择人列表",name: "review_select_participant_list" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_sumbit",desc: "确定",name: "select_participant_submit" }
+#        退出弹出框
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/txt_title",desc: "退出弹出框标题",name: "exit_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/text",desc: "退出弹出框确定",name: "exit_confirm" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/btn_cancel",desc: "退出弹出框取消",name: "exit_cancel" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.SelectParticipantByFrameworkPage
+      value:
+      desc: 按架构选择参与人页面元素
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "选择联系人页面标题",name: "select_participant_by_framework_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/edt",desc: "搜索框",name: "select_participant_by_framework_search" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='通讯录']",desc: "点击通讯录",name: "select_participant_by_framework_click_address" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_org",desc: "组织架构",name: "select_participant_by_framework_framework_check" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_user_org",desc: "领域查看",name: "select_participant_by_framework_department_check" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_sumbit",desc: "查看已选择人列表",name: "review_select_participant_list" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_sumbit",desc: "确定",name: "select_participant_submit" }
+#        退出弹出框
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/txt_title",desc: "退出弹出框标题",name: "exit_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/text",desc: "退出弹出框确定",name: "exit_confirm" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/btn_cancel",desc: "退出弹出框取消",name: "exit_cancel" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.SelectedParticipantPage
+      value:
+      desc: 已选择参与人页面元素
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "已选择联系人页面标题",name: "selected_participant_title" }
+#       已选择联系人列表
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rv_selectedshow",desc: "已选择联系人列表",name: "selected_participant_list" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_right",desc: "确认",name: "selected_participant_confirm" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.ScheduleReminderPage
+      value:
+      desc: 日程提醒
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "日程提醒页标题",name: "schedule_reminder_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_right",desc: "完成",name: "schedule_reminder_confirm" }
+
+        - { type: "xpath",timeout: "5",value: "//*[@text='无提醒']",desc: "无提醒",name: "schedule_reminder_no_reminder" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='开始时']",desc: "开始时",name: "schedule_reminder_at_begin" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='5分钟前']",desc: "5分钟前",name: "schedule_reminder_5minutes" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='15分钟前']",desc: "15分钟前",name: "schedule_reminder_15minutes" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='30分钟前']",desc: "30分钟前",name: "schedule_reminder_30minutes" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='1小时前']",desc: "1消失前",name: "schedule_reminder_1hour" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='1天前']",desc: "1天前",name: "schedule_reminder_1day" }
+
+
+
+  - page:
+      pageName: com.ilink.android.pageObject.ScheduleAlertPage
+      value:
+      desc: 日程弹框
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/notity_title",desc: "日程弹框标题",name: "schedule_alert_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_content",desc: "邀请提示",name: "schedule_invitation_tip" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_schedule_title",desc: "日程标题",name: "schedule_title" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_no_process",desc: "日程暂不处理",name: "schedule_no_process" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_notice_cancel",desc: "日程拒绝",name: "schedule_reject" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_notice_accept",desc: "日程接受",name: "schedule_accept" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.WorkBenchPage
+      value:
+      desc: 工作台首页
+      locators:
+        # 顶部栏
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title1",desc: "现有组织名称",name: "workbench_company_name" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_titlebar_right1",desc: "工作台卡片设置(点击跳转)",name: "workbench_card_settings" }
+        # banner图
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/bannerViewPager",desc: "banner图(点击跳转)",name: "workbench_banner" }
+        # 公告通知
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/more_noticenotification_ll",desc: "公告通知-全部(点击跳转)",name: "workbench_notice_all" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/notice_marqueeview",desc: "轮播公告通知(点击跳转)",name: "workbench_notice_show" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/content_tv",desc: "轮播公告通知标题(点击跳转)",name: "workbench_notice_title" }
+        # 应用
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/more_apps_ll",desc: "应用-全部(点击跳转)",name: "workbench_applicants_all" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='考勤打卡']",desc: "考勤打卡（点击跳转）",name: "workbench_applicants_attendance" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='大白关爱']",desc: "大白关爱（点击跳转）",name: "workbench_applicants_bigwhite" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='补卡申请']",desc: "补卡申请（点击跳转）",name: "workbench_applicants_card_replacement" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='加班申请']",desc: "加班申请（点击跳转）",name: "workbench_applicants_ot" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='加班反馈']",desc: "加班反馈（点击跳转）",name: "workbench_applicants_ot_feedback" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='请假申请']",desc: "请假申请（点击跳转）",name: "workbench_applicants_leave" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='通知公告']",desc: "通知公告（点击跳转）",name: "workbench_applicants_notice" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='员工助手']",desc: "员工助手（点击跳转）",name: "workbench_applicants_staff_assistant" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='PQC']",desc: "PQC（点击跳转）",name: "workbench_applicants_pqc" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='联友易报']",desc: "联友易报（点击跳转）",name: "workbench_applicants_reimbursement" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='北极星OKR']",desc: "北极星OKR（点击跳转）",name: "workbench_applicants_okr" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='eLIAS']",desc: "eLIAS（点击跳转）",name: "workbench_applicants_elias" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='魔学院']",desc: "魔学院（点击跳转）",name: "workbench_applicants_school" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='意见反馈']",desc: "意见反馈（点击跳转）",name: "workbench_applicants_suggestion_feedback" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='更多']",desc: "更多（点击跳转）",name: "workbench_applicants_suggestion_more" }
+        # 快捷考勤打卡
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/cl_clock",desc: "快捷考勤打卡(点击跳转)",name: "workbench_attendance_quick_entrance" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/clock_tv",desc: "快捷考勤打卡按钮",name: "workbench_attendance_quick_click_in" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_towork",desc: "上班打卡时间",name: "workbench_attendance_quick_work_begin_time" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_towork_time",desc: "上班打卡状态",name: "workbench_attendance_quick_work_begin_clink_in_status" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_fromwork",desc: "下班打卡时间",name: "workbench_attendance_quick_off_work_time" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/clock_tv",desc: "下班打卡状态",name: "workbench_attendance_quick_off_work_clink_in_status" }
+        # 工作台-待办中心
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/more_todolist_ll",desc: "全部（点击跳转）",name: "workbench_todo_list_all" }
+        #待办列表
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/all_mytodolist_rv",desc: "立即处理（点击跳转）",name: "workbench_todo_list_handle_immediately" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/done_name_tv",desc: "展开",name: "workbench_todo_list_expand" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/lookmore_tv",desc: "查看更多",name: "workbench_todo_list_check_more" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.WorkBenchSettingsPage
+      value:
+      desc: 工作台设置首页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "工作台设置页标题",name: "workbench_settings_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_right",desc: "完成",name: "workbench_settings_confirm" }
+        #卡片列表
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/mycards_rv",desc: "卡片列表",name: "workbench_settings_cards_list" }
+  - page:
+      pageName: com.ilink.android.pageObject.NoticeHomePage
+      value:
+      desc: 通知公告首页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_actionbar_title",desc: "通知公告标题",name: "workbench_notice_title" }
+  - page:
+      pageName: com.ilink.android.pageObject.ApplicanceHomePage
+      value:
+      desc: 应用中心首页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "应用中心标题",name: "workbench_applicants_center_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_right",desc: "编辑（点击跳转）",name: "workbench_applicants_center_edit" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/edt",desc: "搜索",name: "workbench_applicants_center_search" }
+
+        - { type: "xpath",timeout: "5",value: "//*[@text='考勤打卡']",desc: "考勤打卡（点击跳转）",name: "workbench_applicants_attendance" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='大白关爱']",desc: "大白关爱（点击跳转）",name: "workbench_applicants_bigwhite" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='补卡申请']",desc: "补卡申请（点击跳转）",name: "workbench_applicants_card_replacement" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='加班申请']",desc: "加班申请（点击跳转）",name: "workbench_applicants_ot" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='加班反馈']",desc: "加班反馈（点击跳转）",name: "workbench_applicants_ot_feedback" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='请假申请']",desc: "请假申请（点击跳转）",name: "workbench_applicants_leave" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='通知公告']",desc: "通知公告（点击跳转）",name: "workbench_applicants_notice" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='员工助手']",desc: "员工助手（点击跳转）",name: "workbench_applicants_staff_assistant" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='PQC']",desc: "PQC（点击跳转）",name: "workbench_applicants_pqc" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='联友易报']",desc: "联友易报（点击跳转）",name: "workbench_applicants_reimbursement" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='北极星OKR']",desc: "北极星OKR（点击跳转）",name: "workbench_applicants_okr" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='eLIAS']",desc: "eLIAS（点击跳转）",name: "workbench_applicants_elias" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='魔学院']",desc: "魔学院（点击跳转）",name: "workbench_applicants_school" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='意见反馈']",desc: "意见反馈（点击跳转）",name: "workbench_applicants_suggestion_feedback" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.ApplicanceEditPage
+      value:
+      desc: 应用中心编辑
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "编辑应用标题",name: "workbench_applicants_edit_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_right",desc: "完成",name: "workbench_applicants_edit_done" }
+  - page:
+      pageName: com.ilink.android.pageObject.AttendanceHomePage
+      value:
+      desc: 考勤打卡首页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "考勤打卡首页标题",name: "workbench_applicants_attendance_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_group_name",desc: "考勤组",name: "workbench_applicants_attendance_group" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_goto_work_time",desc: "上班时间",name: "workbench_applicants_attendance_work_on_time" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_off_work_time",desc: "下班时间",name: "workbench_applicants_attendance_work_off_time" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_clock_in_time1",desc: "上班打卡时间",name: "workbench_applicants_attendance_work_on_clock_time" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_clock_in_time2",desc: "下班打卡时间",name: "workbench_applicants_attendance_work_off_clock_time" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_clock_in",desc: "打卡按钮",name: "workbench_applicants_attendance_clock_in" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_clock_text",desc: "打卡按钮显示文本",name: "workbench_applicants_attendance_clock_in_text" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_time_offwork",desc: "打卡按钮显示时间",name: "workbench_applicants_attendance_clock_in_time" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_re_location",desc: "重新定位（点击跳转）",name: "workbench_applicants_attendance_re_locate" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/menu_clockin",desc: "打卡tab",name: "workbench_applicants_attendance_clock_in_tab" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/menu_statistics",desc: "统计tab（点击跳转）",name: "workbench_applicants_attendance_statistics_tab" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/menu_setting",desc: "设置tab（点击跳转）",name: "workbench_applicants_attendance_settings_tab" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.AttendanceReLocatePage
+      value:
+      desc: 考勤重新定位页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_clock",desc: "打卡按钮",name: "workbench_applicants_attendance_relocate_clock_in" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.AttendanceStatisticPage
+      value:
+      desc: 考勤统计页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "考勤统计页标题",name: "workbench_applicants_attendance_statistic_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_statistics",desc: "考勤汇总查看(点击跳转)",name: "workbench_applicants_attendance_statistic" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_button_up",desc: "考勤-处理异常",name: "workbench_applicants_attendance_exception_handle" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/text",desc: "考勤-处理异常-补卡申请（点击跳转）",name: "workbench_applicants_attendance_fillcard" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/btn_cancel",desc: "考勤-处理异常-取消",name: "workbench_applicants_attendance_cancel" }
+
+
+  - page:
+      pageName: com.ilink.android.pageObject.AttendanceSumPage
+      value:
+      desc: 考勤统计汇总页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/segmentcontrolview",desc: "周&月",name: "workbench_applicants_attendance_sum_text" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.AttendanceSettingPage
+      value:
+      desc: 考勤设置页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "考勤设置标题",name: "workbench_applicants_attendance_settings_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_clockin_type",desc: "快捷打卡方式选择(点击跳转)",name: "workbench_applicants_attendance_settings_quick_clock" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.AttendanceQuickClockinPage
+      value:
+      desc: 快捷打卡页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "快捷打卡标题",name: "workbench_applicants_attendance_quick_clock_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/sw_fast_clockin",desc: "快捷打卡开关",name: "workbench_applicants_attendance_quick_clock_switch" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_to_work",desc: "上班选择",name: "workbench_applicants_attendance_quick_clock_work_on_choose" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_from_work",desc: "下班选择",name: "workbench_applicants_attendance_quick_clock_work_off_choose" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_check_remind",desc: "提醒闹钟",name: "workbench_applicants_attendance_quick_clock_alarm" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_check_fast",desc: "极速打卡",name: "workbench_applicants_attendance_quick_clock_fast" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_start",desc: "开始时间选择",name: "workbench_applicants_attendance_quick_clock_start" }
+        # 选择时间列表
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_panel",desc: "时间选择列表",name: "workbench_applicants_attendance_quick_clock_time_list" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_end",desc: "结束时间选择",name: "workbench_applicants_attendance_quick_clock_end" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/sw_sound_vibration",desc: "声音震动提醒",name: "workbench_applicants_attendance_quick_clock_sound_remind" }
+
+
+  - page:
+      pageName: com.ilink.android.pageObject.BigWhiteHomePage
+      value:
+      desc: 大白关爱首页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_actionbar_title",desc: "大白关爱标题",name: "workbench_applicants_bigwhite_title" }
+
+
+  - page:
+      pageName: com.ilink.android.pageObject.FillCardHomePage
+      value:
+      desc: 补卡申请首页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_actionbar_title",desc: "补卡申请标题",name: "workbench_applicants_fillcard_title" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.OTApplyHomePage
+      value:
+      desc: 加班申请首页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_actionbar_title",desc: "加班申请标题",name: "workbench_applicants_OT_apply_title" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.OTReplyHomePage
+      value:
+      desc: 加班反馈首页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_actionbar_title",desc: "加班反馈标题",name: "workbench_applicants_OT_reply_title" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.LeaveHomePage
+      value:
+      desc: 请假申请首页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_actionbar_title",desc: "请假申请标题",name: "workbench_applicants_leave_title" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.FeedbackHomePage
+      value:
+      desc: 意见反馈首页
+      locators:
+        - { type: "xpath",timeout: "5",value: "//*[@text='意见反馈']",desc: "意见反馈标题",name: "workbench_applicants_feedback_title" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.ToDoHomePage
+      value:
+      desc: 待办中心首页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title_todo",desc: "待办中心标题",name: "to_do_title" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_titlebar_search",desc: "待办搜索（点击跳转）",name: "to_do_search" }
+
+        - { type: "xpath",timeout: "5",value: "//*[@text='已发起']",desc: "已发起",name: "to_do_launch" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='待处理']",desc: "待处理",name: "to_do_pending" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='已处理']",desc: "已处理",name: "to_do_done" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='抄送我']",desc: "抄送我",name: "to_do_CC" }
+        # 待办列表
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/todo_recyclerview",desc: "待办列表（点击跳转）",name: "to_do_list" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/classify",desc: "待办标题刷选",name: "to_do_list_classify" }
+
+
+  - page:
+      pageName: com.ilink.android.pageObject.SearchHomePage
+      value:
+      desc: 搜索页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/edt",desc: "搜索",name: "search_edit" }
+
+        #搜索刷选标签
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_contact",desc: "联系人筛选",name: "search_by_contract" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_group_chat",desc: "群组筛选",name: "search_by_groups" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_schedule",desc: "日程筛选",name: "search_by_schedule" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_meeting",desc: "会议筛选",name: "search_by_meeting" }
+        #搜索结果列表
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rv_query_contact",desc: "搜索结果列表",name: "search_result" }
+
+
+
+
+  - page:
+      pageName: com.ilink.android.pageObject.ContractHomePage
+      value:
+      desc: 通讯录首页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "通讯录标题",name: "contract_tittle" }
+      # 搜索
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/edt",desc: "通讯录搜索（点击跳转）",name: "contract_search" }
+      # 组织架构
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_user_company_name",desc: "用户组织名称",name: "contract_company_name" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_user_org_name",desc: "组织架构跳转（点击跳转）",name: "contract_org" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_user_org",desc: "部门跳转（点击跳转）",name: "contract_department" }
+      # 我的好友
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_myfriends_to",desc: "我的好友（点击跳转）",name: "contract_friends" }
+      # 常用联系人
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/contact_recyclerview",desc: "常用联系人列表",name: "contract_friends_common" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.ContractOrgPage
+      value:
+      desc: 组织架构页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "架构标题",name: "contract_org_tittle" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.ContractFriendsPage
+      value:
+      desc: 我的好友页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "我的好友页标题",name: "contract_org_tittle" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_right",desc: "添加好友（点击跳转）",name: "contract_friend_add" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.MeetingHomePage
+      value:
+      desc: 音视频首页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "音视频首页标题",name: "meeting_tittle" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv1",desc: "创建会议",name: "meeting_create" }
+        # 创建会议
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/txt_title",desc: "创建会议入口标题",name: "meeting_create_entrance_tittle" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='语音会议']",desc: "发起语音会议（点击跳转）",name: "meeting_create_voice" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='视频会议']",desc: "发起视频会议（点击跳转）",name: "meeting_create_video" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/btn_cancel",desc: "取消",name: "meeting_create_cancel" }
+
+      # 加入会议
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv2",desc: "加入会议（点击跳转）",name: "meeting_join" }
+
+      # 预约会议
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv3",desc: "预约会议（点击跳转）",name: "meeting_appointment" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rv_appointment_meeting",desc: "预约会议列表",name: "meeting_appointment_list" }
+
+      # 历史会议列表
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rv_all_meeting_record",desc: "历史会议列表",name: "meeting_record_list" }
+        - { type: "id",timeout: "5",value: "",desc: "历史会议列表",name: "ios_meeting_record_list" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.MeetingInitPage
+      value:
+      desc: 音视频启动页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/et_meetingname",desc: "会议启动页会议标题",name: "meeting_init_tittle" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_goback",desc: "会议启动页关闭",name: "meeting_init_close" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/avchat_enable_audio",desc: "静音按钮",name: "meeting_init_audio" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/avchat_enable_video",desc: "摄像头按钮",name: "meeting_init_video" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/avchat_volume",desc: "扬声器按钮",name: "meeting_init_volume" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_start",desc: "开始会议",name: "meeting_init_start" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.InMeetingPage
+      value:
+      desc: 音视频会议中页面
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_meetingname",desc: "会议标题",name: "in_meeting_tittle" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/avchat_enable_audio",desc: "静音按钮",name: "in_meeting_audio" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/avchat_enable_video",desc: "摄像头按钮",name: "in_meeting_video" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/avchat_volume",desc: "扬声器按钮",name: "in_meeting_volume" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_expand_up",desc: "上拉菜单",name: "in_meeting_expend" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/add_menber",desc: "成员管理按钮",name: "in_meeting_member" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/avchat_hang_up",desc: "挂断按钮",name: "in_meeting_hang_up" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_copy",desc: "口令复制",name: "in_meeting_id_copy" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/vedio_switchButton_lock",desc: "口令复制",name: "in_meeting_lock" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_silent",desc: "视频会议全员静音",name: "in_meeting_all_silence_video" }
+
+        - { type: "xpath",timeout: "5",value: "//*[@text='退出会议']",desc: "退出会议",name: "in_meeting__exit" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='结束会议']",desc: "结束会议",name: "in_meeting__close" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/btn_cancel",desc: "取消",name: "in_meeting_cancel" }
+
+        # 人员管理
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/txt_title",desc: "成员管理标题",name: "in_meeting_member_manage_tittle" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_negative",desc: "成员管理返回",name: "in_meeting_member_manage_navigate" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_share_meetingid",desc: "入会口令",name: "in_meeting_member_manage_share" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_add_members",desc: "添加参与人",name: "in_meeting_member_manage_add" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_allsilent",desc: "全员静音",name: "in_meeting_member_all_silence" }
+        # 语音会议的全员静音
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/achat_enable_allsilence",desc: "语音会议全员静音",name: "in_meeting_member_all_silence_audio" }
+
+
+
+  - page:
+      pageName: com.ilink.android.pageObject.MeetingEndPage
+      value:
+      desc: 音视频会议结束页
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ibtn_titlebar_goback",desc: "返回按钮",name: "meeting_end_go_back" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_meetingtype",desc: "会议类型",name: "meeting_end_meeting_type" }
+
+
+
+
+
+
+
+
+
+

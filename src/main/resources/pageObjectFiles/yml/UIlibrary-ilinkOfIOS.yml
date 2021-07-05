@@ -1,0 +1,55 @@
+pages:
+  - page:
+      pageName: com.ilink.android.pageObject.PermisionAskPage
+      value:
+      desc: 过渡页授权页面元素
+      locators:
+        - { type: "id",timeout: "5",value: "com.android.packageinstaller:id/dialog_container",desc: "权限申请",name: "phonepermision" }
+        - { type: "id",timeout: "5",value: "com.android.packageinstaller:id/permission_allow_button",desc: "允许",name: "alloebutton" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.LoginPage
+      value:
+      desc: 登录页面元素
+      locators:
+        - { type: "xpath",timeout: "5",value: "//*[@text='密码登录']",desc: "密码登录",name: "pwdlogin" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='验证码登录']",desc: "验证码登录",name: "validatecodelogin" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/met_login_phone",desc: "手机号输入",name: "phonenuminput" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_sendvalidatecode",desc: "发送验证码",name: "sendvalidatecode" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/met_login_validatecode",desc: "验证码输入",name: "validatecodeinput" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/met_login_account",desc: "手机账号输入",name: "loginaccountinput" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/met_login_password",desc: "密码输入",name: "loginpwdinput" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_login_login",desc: "登陆按钮",name: "loginbutton" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_forgetpassword",desc: "忘记密码按钮",name: "pwdforgotbutton" }
+
+  - page:
+      pageName: com.ilink.android.pageObject.HomePage
+      value:
+      desc: 消息首页页面元素
+      locators:
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_user_info",desc: "侧栏头像信息",name: "userinfo" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/state_ll",desc: "工作状态",name: "workstate" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_tab1",desc: "我的名片",name: "mingpian_tab" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_redpacket",desc: "红包",name: "redpocket_tab" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_tab_huhangbang",desc: "ilink护航榜",name: "huhangbang_tab" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_tab5",desc: "ilink护航榜",name: "settings_tab" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_tab_helpcenter",desc: "帮助中心",name: "helpcener_tab" }
+
+
+
+
+        - { type: "xpath",timeout: "5",value: "//*[@text='密码登录']",desc: "密码登录",name: "pwdlogin" }
+        - { type: "xpath",timeout: "5",value: "//*[@text='验证码登录']",desc: "验证码登录",name: "validatecodelogin" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/met_login_phone",desc: "手机号输入",name: "phonenuminput" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_sendvalidatecode",desc: "发送验证码",name: "sendvalidatecode" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/met_login_validatecode",desc: "验证码输入",name: "validatecodeinput" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/met_login_account",desc: "手机账号输入",name: "loginaccountinput" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/met_login_password",desc: "密码输入",name: "loginpwdinput" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_login_login",desc: "登陆按钮",name: "loginbutton" }
+
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_forgetpassword",desc: "忘记密码按钮",name: "pwdforgotbutton" }
+
+

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="58144" started-at="2020-06-16T12:44:37Z" finished-at="2020-06-16T12:45:35Z">
+    <groups>
+    </groups>
+    <test name="127.0.0.1:62001" duration-ms="58144" started-at="2020-06-16T12:44:37Z" finished-at="2020-06-16T12:45:35Z">
+      <class name="com.mtx.autotest05.DouBanTests">
+        <test-method status="PASS" signature="startServer(java.lang.String)[pri:0, instance:com.mtx.autotest05.DouBanTests@18078bef]" name="startServer" is-config="true" duration-ms="2740" started-at="2020-06-16T12:44:37Z" finished-at="2020-06-16T12:44:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4491]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startServer -->
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.mtx.autotest05.DouBanTests@18078bef]" name="init" is-config="true" duration-ms="12318" started-at="2020-06-16T12:44:40Z" finished-at="2020-06-16T12:44:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[127.0.0.1:62001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4491]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\eclipse-workspace\CrazyAutoTest1\drivers\chromedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="test001_login()[pri:0, instance:com.mtx.autotest05.DouBanTests@18078bef]" name="test001_login" duration-ms="12117" started-at="2020-06-16T12:44:52Z" finished-at="2020-06-16T12:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test001_login -->
+        <test-method status="PASS" signature="backHome()[pri:0, instance:com.mtx.autotest05.DouBanTests@18078bef]" name="backHome" is-config="true" duration-ms="0" started-at="2020-06-16T12:45:04Z" finished-at="2020-06-16T12:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backHome -->
+        <test-method status="PASS" signature="test002_uploadHeaderImg()[pri:0, instance:com.mtx.autotest05.DouBanTests@18078bef]" name="test002_uploadHeaderImg" duration-ms="19298" started-at="2020-06-16T12:45:04Z" finished-at="2020-06-16T12:45:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test002_uploadHeaderImg -->
+        <test-method status="PASS" signature="backHome()[pri:0, instance:com.mtx.autotest05.DouBanTests@18078bef]" name="backHome" is-config="true" duration-ms="1" started-at="2020-06-16T12:45:24Z" finished-at="2020-06-16T12:45:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backHome -->
+        <test-method status="FAIL" signature="test003_writeDiary()[pri:0, instance:com.mtx.autotest05.DouBanTests@18078bef]" name="test003_writeDiary" duration-ms="9843" started-at="2020-06-16T12:45:24Z" finished-at="2020-06-16T12:45:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[实际值【的好与与  183815】与期望值【的好与与 183815】不一致 expected [的好与与 183815] but found [的好与与  183815]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 实际值【的好与与  183815】与期望值【的好与与 183815】不一致 expected [的好与与 183815] but found [的好与与  183815]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.crazy.auto.test.Assertion.assertText(Assertion.java:65)
+at com.mtx.autotest05.DouBanTests.test003_writeDiary(DouBanTests.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test003_writeDiary -->
+        <test-method status="PASS" signature="backHome()[pri:0, instance:com.mtx.autotest05.DouBanTests@18078bef]" name="backHome" is-config="true" duration-ms="1" started-at="2020-06-16T12:45:34Z" finished-at="2020-06-16T12:45:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backHome -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.mtx.autotest05.DouBanTests@18078bef]" name="quit" is-config="true" duration-ms="1624" started-at="2020-06-16T12:45:34Z" finished-at="2020-06-16T12:45:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="stopServer()[pri:0, instance:com.mtx.autotest05.DouBanTests@18078bef]" name="stopServer" is-config="true" duration-ms="51" started-at="2020-06-16T12:45:35Z" finished-at="2020-06-16T12:45:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopServer -->
+      </class> <!-- com.mtx.autotest05.DouBanTests -->
+    </test> <!-- 127.0.0.1:62001 -->
+  </suite> <!-- Suite -->
+</testng-results>

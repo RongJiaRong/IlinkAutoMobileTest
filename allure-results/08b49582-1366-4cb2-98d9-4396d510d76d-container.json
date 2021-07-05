@@ -1,0 +1,1 @@
+{"uuid":"08b49582-1366-4cb2-98d9-4396d510d76d","name":"com.ilink.android.IlinkTestLoginPart","children":["6bcd4a07-3324-48d4-a92e-71b087af2837"],"befores":[{"name":"init","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1625217002309,"stop":1625217017102}],"afters":[],"links":[],"start":1625217002245,"stop":1625217072247}
