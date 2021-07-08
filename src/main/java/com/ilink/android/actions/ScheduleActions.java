@@ -2,8 +2,13 @@ package com.ilink.android.actions;
 
 import com.crazy.auto.driver.DriverBase;
 import com.crazy.auto.element.ElementBeans;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
+import javax.lang.model.element.Element;
+import javax.lang.model.util.Elements;
 import java.io.IOException;
+import java.util.List;
 
 
 public class ScheduleActions extends PageBaseActions{
@@ -26,8 +31,16 @@ public class ScheduleActions extends PageBaseActions{
                 if (operate.getText(selectParticipantPage.select_participant_title()).equals("选择联系人")){
                     operate.click(selectParticipantPage.select_participant_search());
                     operate.sendKeys(selectParticipantPage.select_participant_search(),searchText);
-                    ElementBeans list = selectParticipantPage.search_participant_list();
-                    if (operate.getText(list).contains(searchText)){
+                    driver.sleep(5);
+//                   List<WebElement> list1 = driver.findElements(selectParticipantPage.select_participant_result());
+//                    System.out.println(list1.get(0));
+//                    for (WebElement element:list1) {
+//                        if(element.getText().contains(searchText)){
+//                            element.click();
+//                        }
+//                    }
+
+                    if (driver.getPageSource().contains(searchText)){
                         operate.click(selectParticipantPage.select_participant_result());
                         driver.sleep(2);
                     }else{

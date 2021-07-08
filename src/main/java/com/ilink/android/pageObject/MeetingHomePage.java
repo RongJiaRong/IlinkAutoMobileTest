@@ -31,6 +31,24 @@ public  ElementBeans meeting_tittle() throws IOException
  }
 
 /***
+* 音视频首页返回
+* @return
+* @throws IOException
+*/
+public  ElementBeans meeting_go_back() throws IOException
+ {
+   if(locatorMap.containsKey("meeting_go_back")||locatorMap.containsKey("ios_meeting_go_back")){
+   ElementBeans elementBeans=locatorMap.get("meeting_go_back");
+       if(driver.platform.equalsIgnoreCase("ios")){
+           elementBeans=locatorMap.get("ios_meeting_go_back");
+       }
+   return elementBeans;
+ }
+   else{
+ log.error("在"+pagePath+"中不存在【meeting_go_back】元素信息"); return null;}
+ }
+
+/***
 * 创建会议
 * @return
 * @throws IOException

@@ -27,7 +27,7 @@
 		<classes>
 <!--				<class name="com.ilink.android.IlinkTestLoginPart" />-->
 <!--				<class name="com.ilink.android.IlinkTestSchedulePart" />-->
-			<class name="com.ilink.android.IlinkTestAudioAndVedioPart" />
+				<class name="com.ilink.android.IlinkTestAudioAndVedioPart" />
 		</classes>
 	</test>
 

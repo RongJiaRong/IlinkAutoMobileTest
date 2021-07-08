@@ -41,6 +41,8 @@ pages:
 #        - 2. 消息首页顶栏按钮
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_start_meeting",desc: "进入音视频首页",name: "start_meeting" }
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_setting",desc: "首页加号",name: "add_tab" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/voice_name",desc: "音视频横幅",name: "voice_meeting_quick_entrance" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/zhibo_name",desc: "直播横幅",name: "live_quick_entrance" }
         - { type: "xpath",timeout: "5",value: "//*[@text='创建群聊']",desc: "创建群聊",name: "create_groups_chat" }
         - { type: "xpath",timeout: "5",value: "//*[@text='扫一扫']",desc: "扫一扫",name: "scanning" }
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/edt",desc: "搜索",name: "searching" }
@@ -113,7 +115,7 @@ pages:
 #         搜索结果列表
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rv_query_contact",desc: "搜索结果列表",name: "search_participant_list" }
 
-        - { type: "xpath",timeout: "5",value: "//*[@text='测试账号17']",desc: "测试账号17",name: "select_participant_result" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/item_persion_name_tv",desc: "容嘉荣",name: "select_participant_result" }
 
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_selected",desc: "查看已选择人列表（点击跳转）",name: "review_select_participant_list" }
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ll_sumbit",desc: "确定",name: "select_participant_submit" }
@@ -485,6 +487,7 @@ pages:
       desc: 音视频首页
       locators:
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_titlebar_title",desc: "音视频首页标题",name: "meeting_tittle" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/ibtn_titlebar_goback",desc: "音视频首页返回",name: "meeting_go_back" }
 
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv1",desc: "创建会议",name: "meeting_create" }
         # 创建会议
@@ -527,12 +530,14 @@ pages:
 
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/avchat_enable_audio",desc: "静音按钮",name: "in_meeting_audio" }
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/avchat_enable_video",desc: "摄像头按钮",name: "in_meeting_video" }
-        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/avchat_volume",desc: "扬声器按钮",name: "in_meeting_volume" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/avchat_loadspeaker",desc: "扬声器按钮",name: "in_meeting_volume" }
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_expand_up",desc: "上拉菜单",name: "in_meeting_expend" }
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/add_menber",desc: "成员管理按钮",name: "in_meeting_member" }
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/avchat_hang_up",desc: "挂断按钮",name: "in_meeting_hang_up" }
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_copy",desc: "口令复制",name: "in_meeting_id_copy" }
-        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/vedio_switchButton_lock",desc: "口令复制",name: "in_meeting_lock" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/vedio_switchButton_lock",desc: "锁定视频会议",name: "in_video_meeting_lock" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/audio_switchButton_lock",desc: "锁定音频会议",name: "in_audio_meeting_lock" }
+
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_silent",desc: "视频会议全员静音",name: "in_meeting_all_silence_video" }
 
         - { type: "xpath",timeout: "5",value: "//*[@text='退出会议']",desc: "退出会议",name: "in_meeting__exit" }
@@ -544,7 +549,12 @@ pages:
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/iv_negative",desc: "成员管理返回",name: "in_meeting_member_manage_navigate" }
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_share_meetingid",desc: "入会口令",name: "in_meeting_member_manage_share" }
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rl_add_members",desc: "添加参与人",name: "in_meeting_member_manage_add" }
+        - { type: "xpath",timeout: "5",value: "//*[contains(text(),'已入会')]",desc: "已入会",name: "in_meeting_in_meeting" }
+        - { type: "xpath",timeout: "5",value: "//*[contains(text(),'未入会')]",desc: "未入会",name: "in_meeting_off__meeting" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_allcallagain",desc: "全员重呼",name: "in_meeting_member_all_recall" }
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/tv_allsilent",desc: "全员静音",name: "in_meeting_member_all_silence" }
+        - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/rv_unjoinedmembers",desc: "未入会列表",name: "in_meeting_member_un_join_list" }
+
         # 语音会议的全员静音
         - { type: "id",timeout: "5",value: "com.lanyou.base.ilink:id/achat_enable_allsilence",desc: "语音会议全员静音",name: "in_meeting_member_all_silence_audio" }
 

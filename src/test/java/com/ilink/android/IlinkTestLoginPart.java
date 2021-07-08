@@ -6,9 +6,9 @@ import org.testng.annotations.Test;
 public class IlinkTestLoginPart extends IlinkTestForAndroidBase {
 
 
-    @Test (description = "1。在登陆页通过账号密码正常登陆",dataProvider = "loginHappyFlow")
-    public void test001_loginHappyFlow(String username,String pwd) throws Exception {
-        loginActions.login(username,pwd);
+    @Test (description = "1-1-1。在登陆页通过账号密码正常登陆")
+    public void test001_loginHappyFlow() throws Exception {
+        loginActions.login(test001_loginHappyFlow_username,test001_loginHappyFlow_pwd);
         assertion.assertContainsText(proUtil.getKey("after_login_assert"),5);
     }
 

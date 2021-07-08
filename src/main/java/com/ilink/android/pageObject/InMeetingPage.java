@@ -157,21 +157,39 @@ public  ElementBeans in_meeting_id_copy() throws IOException
  }
 
 /***
-* 口令复制
+* 锁定视频会议
 * @return
 * @throws IOException
 */
-public  ElementBeans in_meeting_lock() throws IOException
+public  ElementBeans in_video_meeting_lock() throws IOException
  {
-   if(locatorMap.containsKey("in_meeting_lock")||locatorMap.containsKey("ios_in_meeting_lock")){
-   ElementBeans elementBeans=locatorMap.get("in_meeting_lock");
+   if(locatorMap.containsKey("in_video_meeting_lock")||locatorMap.containsKey("ios_in_video_meeting_lock")){
+   ElementBeans elementBeans=locatorMap.get("in_video_meeting_lock");
        if(driver.platform.equalsIgnoreCase("ios")){
-           elementBeans=locatorMap.get("ios_in_meeting_lock");
+           elementBeans=locatorMap.get("ios_in_video_meeting_lock");
        }
    return elementBeans;
  }
    else{
- log.error("在"+pagePath+"中不存在【in_meeting_lock】元素信息"); return null;}
+ log.error("在"+pagePath+"中不存在【in_video_meeting_lock】元素信息"); return null;}
+ }
+
+/***
+* 锁定音频会议
+* @return
+* @throws IOException
+*/
+public  ElementBeans in_audio_meeting_lock() throws IOException
+ {
+   if(locatorMap.containsKey("in_audio_meeting_lock")||locatorMap.containsKey("ios_in_audio_meeting_lock")){
+   ElementBeans elementBeans=locatorMap.get("in_audio_meeting_lock");
+       if(driver.platform.equalsIgnoreCase("ios")){
+           elementBeans=locatorMap.get("ios_in_audio_meeting_lock");
+       }
+   return elementBeans;
+ }
+   else{
+ log.error("在"+pagePath+"中不存在【in_audio_meeting_lock】元素信息"); return null;}
  }
 
 /***
@@ -319,6 +337,60 @@ public  ElementBeans in_meeting_member_manage_add() throws IOException
  }
 
 /***
+* 已入会
+* @return
+* @throws IOException
+*/
+public  ElementBeans in_meeting_in_meeting() throws IOException
+ {
+   if(locatorMap.containsKey("in_meeting_in_meeting")||locatorMap.containsKey("ios_in_meeting_in_meeting")){
+   ElementBeans elementBeans=locatorMap.get("in_meeting_in_meeting");
+       if(driver.platform.equalsIgnoreCase("ios")){
+           elementBeans=locatorMap.get("ios_in_meeting_in_meeting");
+       }
+   return elementBeans;
+ }
+   else{
+ log.error("在"+pagePath+"中不存在【in_meeting_in_meeting】元素信息"); return null;}
+ }
+
+/***
+* 未入会
+* @return
+* @throws IOException
+*/
+public  ElementBeans in_meeting_off__meeting() throws IOException
+ {
+   if(locatorMap.containsKey("in_meeting_off__meeting")||locatorMap.containsKey("ios_in_meeting_off__meeting")){
+   ElementBeans elementBeans=locatorMap.get("in_meeting_off__meeting");
+       if(driver.platform.equalsIgnoreCase("ios")){
+           elementBeans=locatorMap.get("ios_in_meeting_off__meeting");
+       }
+   return elementBeans;
+ }
+   else{
+ log.error("在"+pagePath+"中不存在【in_meeting_off__meeting】元素信息"); return null;}
+ }
+
+/***
+* 全员重呼
+* @return
+* @throws IOException
+*/
+public  ElementBeans in_meeting_member_all_recall() throws IOException
+ {
+   if(locatorMap.containsKey("in_meeting_member_all_recall")||locatorMap.containsKey("ios_in_meeting_member_all_recall")){
+   ElementBeans elementBeans=locatorMap.get("in_meeting_member_all_recall");
+       if(driver.platform.equalsIgnoreCase("ios")){
+           elementBeans=locatorMap.get("ios_in_meeting_member_all_recall");
+       }
+   return elementBeans;
+ }
+   else{
+ log.error("在"+pagePath+"中不存在【in_meeting_member_all_recall】元素信息"); return null;}
+ }
+
+/***
 * 全员静音
 * @return
 * @throws IOException
@@ -334,6 +406,24 @@ public  ElementBeans in_meeting_member_all_silence() throws IOException
  }
    else{
  log.error("在"+pagePath+"中不存在【in_meeting_member_all_silence】元素信息"); return null;}
+ }
+
+/***
+* 未入会列表
+* @return
+* @throws IOException
+*/
+public  ElementBeans in_meeting_member_un_join_list() throws IOException
+ {
+   if(locatorMap.containsKey("in_meeting_member_un_join_list")||locatorMap.containsKey("ios_in_meeting_member_un_join_list")){
+   ElementBeans elementBeans=locatorMap.get("in_meeting_member_un_join_list");
+       if(driver.platform.equalsIgnoreCase("ios")){
+           elementBeans=locatorMap.get("ios_in_meeting_member_un_join_list");
+       }
+   return elementBeans;
+ }
+   else{
+ log.error("在"+pagePath+"中不存在【in_meeting_member_un_join_list】元素信息"); return null;}
  }
 
 /***

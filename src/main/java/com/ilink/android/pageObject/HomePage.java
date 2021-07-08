@@ -175,6 +175,42 @@ public  ElementBeans add_tab() throws IOException
  }
 
 /***
+* 音视频横幅
+* @return
+* @throws IOException
+*/
+public  ElementBeans voice_meeting_quick_entrance() throws IOException
+ {
+   if(locatorMap.containsKey("voice_meeting_quick_entrance")||locatorMap.containsKey("ios_voice_meeting_quick_entrance")){
+   ElementBeans elementBeans=locatorMap.get("voice_meeting_quick_entrance");
+       if(driver.platform.equalsIgnoreCase("ios")){
+           elementBeans=locatorMap.get("ios_voice_meeting_quick_entrance");
+       }
+   return elementBeans;
+ }
+   else{
+ log.error("在"+pagePath+"中不存在【voice_meeting_quick_entrance】元素信息"); return null;}
+ }
+
+/***
+* 直播横幅
+* @return
+* @throws IOException
+*/
+public  ElementBeans live_quick_entrance() throws IOException
+ {
+   if(locatorMap.containsKey("live_quick_entrance")||locatorMap.containsKey("ios_live_quick_entrance")){
+   ElementBeans elementBeans=locatorMap.get("live_quick_entrance");
+       if(driver.platform.equalsIgnoreCase("ios")){
+           elementBeans=locatorMap.get("ios_live_quick_entrance");
+       }
+   return elementBeans;
+ }
+   else{
+ log.error("在"+pagePath+"中不存在【live_quick_entrance】元素信息"); return null;}
+ }
+
+/***
 * 创建群聊
 * @return
 * @throws IOException
